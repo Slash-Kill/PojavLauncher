@@ -146,7 +146,21 @@ dependencies {
     // implementation 'com.intuit.sdp:sdp-android:1.0.5'
     // implementation 'com.intuit.ssp:ssp-android:1.0.5'
 
+    implementation 'com.android.support:support-annotations:+'
+
     implementation 'org.tukaani:xz:1.8'
+
+    implementation 'org.lwjgl:lwjgl:3.2.3'
+    implementation 'org.lwjgl:lwjgl-opengl:3.2.1'
+    implementation 'org.lwjgl:lwjgl-glfw:3.2.1'
+
+    implementation 'org.joml:joml:1.10.4'
+    implementation 'io.netty:netty-all:4.1.68.Final'
+
+    implementation 'com.github.oshi:oshi-core:5.8.5'
+
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.2'
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.2'
     
     implementation 'net.objecthunter:exp4j:0.4.8'
     // implementation 'net.sourceforge.streamsupport:streamsupport-cfuture:1.7.0'

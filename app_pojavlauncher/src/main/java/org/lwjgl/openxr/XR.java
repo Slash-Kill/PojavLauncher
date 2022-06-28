@@ -4,8 +4,8 @@
  */
 package org.lwjgl.openxr;
 
-import net.sorenon.mcxr.play.MCXRNativeLoad;
-import org.jetbrains.annotations.Nullable;
+import net.kdt.pojavlaunch.PojavLauncherNativeLoad;
+import androidx.annotation.*;
 import org.lwjgl.PointerBuffer;
 import org.lwjgl.system.*;
 
@@ -92,10 +92,10 @@ public class XR {
             xrInitializeLoaderKHR = getFunctionAddress("xrInitializeLoaderKHR");
             if (xrInitializeLoaderKHR != NULL) {
                 try (MemoryStack stack = stackPush()) {
-                    long context = memGetAddress(MCXRNativeLoad.getApplicationActivityPtr());
-                    long jvm = memGetAddress(MCXRNativeLoad.getJVMPtr());
+                    long context = memGetAddress(PojavLauncherNativeLoad.getApplicationActivityPtr());
+                    long jvm = memGetAddress(PojavLauncherNativeLoad.getJVMPtr());
 
-                    var createInfo = XrLoaderInitInfoAndroidKHR
+                    XrLoaderInitInfoAndroidKHR createInfo = XrLoaderInitInfoAndroidKHR
                             .calloc(stack)
                             .type$Default()
                             .next(NULL)

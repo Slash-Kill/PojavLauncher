@@ -5,7 +5,7 @@
  */
 package org.lwjgl.openxr;
 
-import org.jetbrains.annotations.Nullable;
+import androidx.annotation.Nullable;
 /** The KHR_android_create_instance extension. */
 public final class KHRAndroidCreateInstance {
 
